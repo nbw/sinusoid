@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="src/style.css">
+    <title>Sinusoid</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="src/img/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="title" content="">
+    <meta name="description" content="Sinusoid OP-Z">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sinusoid.nathanwillson.com">
+    <meta property="og:title" content="Sinusoid OP-Z">
+    <meta property="og:description" content="Sinusoid OP-Z">
+    <meta property="og:image" content="src/img/banner.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sinusoid.nathanwillson.com">
+    <meta property="twitter:title" content="Sinusoid OP-Z">
+    <meta property="twitter:description" content="Sinusoid OP-Z">
+    <meta property="twitter:image" content="src/img/banner.png">
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KVWEBK0M0G"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-KVWEBK0M0G');
+    </script>
+  </head>
+  <body>
+    <div id="menu">
+      <div class="content">
+        <h1>Sinusoid OPZ</h1>
+        <hr/>
+        <p>
+          Sinusoid is a music art/visualization project. It uses MIDI received from <a href="https://teenage.engineering/products/op-z">Teenage Engineering's OP-Z synthesizer</a> (via the <a href="https://www.w3.org/TR/webmidi/" target="_blank">Web MIDI API</a>).
+        </p>
+        <hr/>
+        <h2>Controls</h2>
+        <p>
+          The GREEN and BLUE dial's of the MOTION track (right-most track) control speed and fading respectively.
+        </p>
+        <hr/>
+        <h2>Instructions</h2>
+        </hr>
+        <ol>
+          <li>Plug in your OP-Z into your computer</li>
+          <li>Make sure it's set to output midi (I used <a href="https://teenage.engineering/guides/op-z/app" target="_blank">the iOS app</a> to do this)</li>
+          <li>Click on the connect button</li>
+        </ol>
+        <button id="midi-connect">
+          Connect
+        </button>
+        <p id="midi-connect-error"></p>
+        <hr/>
+        <h2>Code</h2>
+        <p>
+          Uses <a class="github-button" href="https://github.com/nbw/opz" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-icon="octicon-star" aria-label="Star nbw/opz on GitHub">OPZ.js</a> to parse midi. A link to the code can be found in the libary's example section.
+        </p>
+        <hr/>
+        <h2>Browser Support</h2>
+        <p>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/API/MIDIAccess#Browser_compatibility">Unfortunately Web MIDI is supported by a limited number of browsers</a>. <b>tl;dr, I'd recommend using Chrome.</b>
+        </p>
+        <hr/>
+        <img id="opz" src="src/img/opz_white.svg"/>
+      </div>
+    </div>
+    <canvas id="canvas">
+    </canvas>
+    <script src="src/script.js"></script>
+  </body>
+</html>
+

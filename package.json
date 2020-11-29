@@ -1,0 +1,32 @@
+{
+  "name": "Circle",
+  "version": "1.0.0",
+  "description": "Circle",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build:dist",
+    "build:dist": "npm run browserify",
+    "browserify": "browserify lib/index.js -o src/script.js -g [ babelify --configFile ./.dist.babelrc ]"
+  },
+  "keywords": [
+    "teenage",
+    "engineering",
+    "midi",
+    "op-z"
+  ],
+  "author": "Nathan Willson <contact@nathanwillson.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "babelify": "^10.0.0",
+    "browserify": "^17.0.0"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.12.1",
+    "@babel/runtime": "^7.12.1",
+    "js-yaml": "^3.14.0",
+    "opzjs": "^1.0.1",
+    "rimraf": "^3.0.2"
+  }
+}
