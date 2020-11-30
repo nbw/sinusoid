@@ -58,6 +58,11 @@ button:hover {
   background-color: #FFF;
 }
 
+iframe {
+  display: block;
+  margin: auto;
+}
+
 #menu {
   width: 100%;
   height: 100%;
@@ -87,3 +92,4 @@ button:hover {
 .hide {
   display: none;
 }
+
