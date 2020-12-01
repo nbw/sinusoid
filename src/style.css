@@ -92,4 +92,30 @@ iframe {
 .hide {
   display: none;
 }
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  iframe {
+    max-width: 400px;
+    max-height: 215px;
+  }
+  #menu {
+    width: calc(100% - 2rem);
+    padding: 4rem 1rem;
+  }
+
+  #opz, img {
+    max-width: calc(100% - 2rem);
+  }
+
+  .desktop, hr {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+}
 
