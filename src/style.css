@@ -98,8 +98,8 @@ iframe {
 
 @media screen and (max-width: 600px) {
   iframe {
-    max-width: 400px;
-    max-height: 215px;
+    max-width: 380px;
+    max-height: 205px;
   }
   #menu {
     width: calc(100% - 2rem);
